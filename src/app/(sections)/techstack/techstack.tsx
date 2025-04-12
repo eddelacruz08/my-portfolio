@@ -17,8 +17,6 @@ import {
   Globe, 
   CornerDownRight, 
   Coffee,
-  Laptop,
-  PenTool,
   Layers
 } from 'lucide-react';
 
@@ -263,7 +261,7 @@ const TechStack = () => {
         >
           <h3 className="text-xl font-semibold mb-4 text-emerald-700">Current Working Stack at Multisys Technologies</h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            These are the technologies I'm actively using in my current role:
+            These are the technologies I&apos;m actively using in my current role:
           </p>
           
           <ul className="space-y-3 text-gray-600 dark:text-gray-400">

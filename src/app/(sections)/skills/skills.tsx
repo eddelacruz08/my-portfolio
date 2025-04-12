@@ -90,7 +90,7 @@ const Skills = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Here are some of the technologies and skills I've gained throughout my career.
+            Here are some of the technologies and skills I&apos;ve gained throughout my career.
           </motion.p>
         </div>
 

@@ -59,13 +59,13 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-gray-600 dark:text-gray-400">
               <p>
-                Hello! I'm Edmon, a software engineer based in the Philippines. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+                Hello! I&apos;m Edmon, a software engineer based in the Philippines. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
               </p>
               <p>
-                I have a solid background in software development with expertise in creating robust and scalable applications. I've had the privilege of working at various companies, gaining valuable experience across different aspects of software engineering.
+                I have a solid background in software development with expertise in creating robust and scalable applications. I&apos;ve had the privilege of working at various companies, gaining valuable experience across different aspects of software engineering.
               </p>
               <p>
-                Here are a few technologies I've been working with recently:
+                Here are a few technologies I&apos;ve been working with recently:
               </p>
 
               <div className="grid grid-cols-2 gap-2 max-w-md">

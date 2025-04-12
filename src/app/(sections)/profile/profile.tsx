@@ -41,16 +41,16 @@ const Profile = () => {
               <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
               <div className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed space-y-4">
                 <p>
-                  Hi! I'm a Software Engineer with a passion for building high-performance, user-friendly websites and applications. I specialize in full-stack development using technologies such as React.js, Next.js, Node.js, and MySQL, enabling me to deliver seamless experiences from front to back.
+                  Hi! I&apos;m a Software Engineer with a passion for building high-performance, user-friendly websites and applications. I specialize in full-stack development using technologies such as React.js, Next.js, Node.js, and MySQL, enabling me to deliver seamless experiences from front to back.
                 </p>
                 <p>
                   Driven by curiosity and a continuous desire to improve, I enjoy exploring new tools, frameworks, and methodologies that enhance both development workflows and user outcomes. I value writing clean, maintainable code and collaborating with others to bring ideas to life through meaningful and efficient software solutions.
                 </p>
                 <p>
-                  I believe that effective communication and strong collaboration are just as vital as technical expertise. I'm always open to new challenges, excited to learn, and eager to contribute to impactful projects.
+                  I believe that effective communication and strong collaboration are just as vital as technical expertise. I&apos;m always open to new challenges, excited to learn, and eager to contribute to impactful projects.
                 </p>
                 <p>
-                  Let's connect—I'd love to chat about technology, problem-solving, or opportunities to collaborate!
+                  Let&apos;s connect—I&apos;d love to chat about technology, problem-solving, or opportunities to collaborate!
                 </p>
               </div>
             </div>

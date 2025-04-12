@@ -45,7 +45,7 @@ const Contact = () => {
       
       setSubmitSuccess(true);
       setTimeout(() => setSubmitSuccess(false), 5000);
-    } catch (error) {
+    } catch (_) {
       setSubmitError('There was an error sending your message. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -211,7 +211,7 @@ const Contact = () => {
               {/* Success Message */}
               {submitSuccess && (
                 <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-md">
-                  Your message has been sent successfully! I'll get back to you soon.
+                  Your message has been sent successfully! I&apos;ll get back to you soon.
                 </div>
               )}
               

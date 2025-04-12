@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Briefcase, Building, Calendar } from 'lucide-react';
+import { Building, Calendar } from 'lucide-react';
 
 interface ExperienceItemProps {
   company: string;

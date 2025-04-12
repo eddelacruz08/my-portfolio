@@ -48,8 +48,8 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            I'm a software engineer specializing in building exceptional digital experiences.
-            Currently, I'm focused on building accessible, human-centered products.
+            I&apos;m a software engineer specializing in building exceptional digital experiences.
+            Currently, I&apos;m focused on building accessible, human-centered products.
           </motion.p>
           
           <motion.div 

@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
   openGraph: {
     type: 'website',
     url: siteConfig.url,
@@ -42,8 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-zinc-950 text-black dark:text-white min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-zinc-950 text-black dark:text-white min-h-screen flex flex-col relative overflow-x-hidden`}
       >
+        
         <Navbar />
         <main className="flex-grow">
           {children}

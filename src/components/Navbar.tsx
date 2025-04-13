@@ -53,8 +53,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="font-bold text-xl">
-              Developer<span className="text-emerald-700">Portfolio</span>
+            <Link href="/" className="font-bold text-xl dark:text-white text-gray-900">
+            DelaCruz<span className="text-emerald-700">Portfolio</span>
             </Link>
           </div>
 
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors"
+                  className="hover:text-emerald-700 px-3 py-2 text-sm font-medium transition-colors dark:text-white text-gray-900"
                 >
                   {item.name}
                 </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
             {mounted && (
               <button
                 onClick={toggleDarkMode}
-                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-zinc-800"
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-zinc-800 dark:text-white text-gray-900"
                 aria-label="Toggle dark mode"
               >
                 {isDarkMode ? (
@@ -125,7 +125,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-zinc-800"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 dark:hover:bg-zinc-800 dark:text-white text-gray-900"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

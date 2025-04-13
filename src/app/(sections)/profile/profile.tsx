@@ -5,11 +5,11 @@ import { User } from 'lucide-react';
 
 const Profile = () => {
   return (
-    <section id="profile" className="py-16 bg-white dark:bg-zinc-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="profile" className="py-16 dark:bg-zinc-800 bg-gray-200 relative">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
           <motion.h2
-            className="text-3xl font-bold"
+            className="text-3xl font-bold text-emerald-700 dark:text-emerald-400"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -18,7 +18,7 @@ const Profile = () => {
             Profile Overview
           </motion.h2>
           <motion.div
-            className="w-24 h-1 bg-emerald-700 mx-auto mt-4"
+            className="w-24 h-1 bg-emerald-700 dark:bg-emerald-500 mx-auto mt-4"
             initial={{ opacity: 0, width: 0 }}
             whileInView={{ opacity: 1, width: 96 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -27,7 +27,7 @@ const Profile = () => {
         </div>
 
         <motion.div
-          className="bg-white dark:bg-zinc-900 rounded-lg shadow-md border border-gray-200 dark:border-zinc-800 p-8 max-w-4xl mx-auto"
+          className="bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm rounded-lg shadow-md border border-gray-200 dark:border-zinc-800 p-8 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -35,11 +35,11 @@ const Profile = () => {
         >
           <div className="flex items-start">
             <div className="flex-shrink-0">
-              <User className="h-8 w-8 text-emerald-700" />
+              <User className="h-8 w-8 text-emerald-700 dark:text-emerald-400" />
             </div>
             <div className="ml-4">
-              <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
-              <div className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed space-y-4">
+              <h3 className="text-xl font-semibold mb-4 text-emerald-700 dark:text-emerald-400">Professional Summary</h3>
+              <div className="text-gray-800 dark:text-white text-lg leading-relaxed space-y-4">
                 <p>
                   Hi! I&apos;m a Software Engineer with a passion for building high-performance, user-friendly websites and applications. I specialize in full-stack development using technologies such as React.js, Next.js, Node.js, and MySQL, enabling me to deliver seamless experiences from front to back.
                 </p>

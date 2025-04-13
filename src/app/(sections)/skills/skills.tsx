@@ -13,18 +13,18 @@ interface SkillCardProps {
 const SkillCard = ({ title, description, icon, delay }: SkillCardProps) => {
   return (
     <motion.div
-      className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow-md border border-gray-200 dark:border-zinc-800"
+      className="dark:bg-zinc-800 bg-gray-200 backdrop-blur-sm p-6 rounded-lg shadow-md border border-gray-200 dark:border-zinc-800"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: delay * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ y: -5 }}
     >
-      <div className="text-emerald-700 rounded-full w-12 h-12 flex items-center justify-center bg-emerald-100 dark:bg-emerald-900/30 mb-4">
+      <div className="text-emerald-700 dark:text-emerald-400 rounded-full w-12 h-12 flex items-center justify-center bg-emerald-100/80 dark:bg-emerald-900/20 mb-4">
         {icon}
       </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-400">{description}</p>
+      <h3 className="text-xl font-semibold mb-2 text-emerald-700 dark:text-emerald-400">{title}</h3>
+      <p className="text-gray-800 dark:text-white">{description}</p>
     </motion.div>
   );
 };
@@ -64,11 +64,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-16">
+    <section id="skills" className="py-16 dark:bg-zinc-900 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <motion.h2
-            className="text-3xl font-bold"
+            className="text-3xl font-bold text-emerald-700 dark:text-emerald-400"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -77,14 +77,14 @@ const Skills = () => {
             My Skills
           </motion.h2>
           <motion.div
-            className="w-24 h-1 bg-emerald-700 mx-auto mt-4"
+            className="w-24 h-1 bg-emerald-700 dark:bg-emerald-500 mx-auto mt-4"
             initial={{ opacity: 0, width: 0 }}
             whileInView={{ opacity: 1, width: 96 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           ></motion.div>
           <motion.p
-            className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
+            className="mt-4 text-lg text-gray-800 dark:text-white max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}

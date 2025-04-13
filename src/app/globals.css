@@ -3,7 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --emerald-primary: #047857;
+  --emerald-secondary: #10b981;
+  --emerald-light: #d1fae5;
+  --gray-text-light: #4b5563;  /* gray-600 */
+  --gray-text-dark: #f9fafb;   /* gray-50 */
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -15,7 +22,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f9fafb;
+    --gray-text-light: #4b5563;
+    --gray-text-dark: #f9fafb;
   }
 }
 
